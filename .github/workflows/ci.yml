@@ -32,7 +32,7 @@ jobs:
         
     - name: Run tests with pytest
       run: |
-        pytest test_app.py
+        pytest ./tests/test_app.py
 
     - name: Build Docker image
       run: docker build -t test2 .
