@@ -8,7 +8,9 @@ app = Flask(__name__)
 def hello():
     return 'Hello from test2!'
 
+
 @app.route('/add', methods=['GET'])
+
 
 def add_numbers():
     try:
@@ -19,5 +21,4 @@ def add_numbers():
         return jsonify({"error": "Invalid input"}), 400
 
 if __name__ == '__main__':
-    
     app.run(host='0.0.0.0', port=5000)
