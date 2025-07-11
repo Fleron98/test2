@@ -1,5 +1,5 @@
 import pytest
-from main import app
+from ./test2/src/mkpkg/main import app
 
 
 @pytest.fixture
